@@ -6,7 +6,6 @@ import Team from './components/Team';
 import NECJourney from './components/NECJourney';
 import Events from './components/Events';
 import Blog from './components/Blog';
-import SocialMedia from './components/SocialMedia';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -26,7 +25,6 @@ function App() {
         <NECJourney />
         <Events />
         <Blog />
-        <SocialMedia />
         <Contact />
       </main>
       <Footer />

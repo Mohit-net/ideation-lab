@@ -35,19 +35,22 @@ export default function Navbar() {
         >
           <a
             href="#home"
-            className="flex items-center gap-2.5 pr-4 py-3 group"
+            className="flex items-center gap-3 pr-4 py-2 group"
             onClick={() => setOpen(false)}
           >
-            <span className="relative inline-flex items-center justify-center w-10 rounded-xl bg0 rounded-xl bg-gradient-brand shadow-glow-brand-strong text-white overflow-hidden">
-              <img src="/src/assets/logo.png" alt="..." className="w-7 h-7" />
-              <span className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            </span>
-            <div className="flex flex-col leading-tight text-left">
-              <span className="font-display font-bold text-[15px] text-white tracking-tight">
-                The Ideation Lab
-              </span>
-              <span className="text-[10px] uppercase tracking-[0.16em] text-brand-300 font-semibold">
+            <div className="relative h-12 sm:h-16 w-auto transition-transform duration-300 group-hover:scale-105">
+              <img 
+                src="/src/assets/logo.png" 
+                alt="The Ideation Lab Logo" 
+                className="h-full w-auto object-contain brightness-110"
+              />
+            </div>
+            <div className="hidden sm:flex flex-col justify-center leading-tight text-left border-l border-white/10 pl-4 h-10 sm:h-12">
+              <span className="font-display font-bold text-[14px] text-white tracking-tight">
                 NEC 2026
+              </span>
+              <span className="text-[9px] uppercase tracking-[0.2em] text-brand-400 font-bold">
+                Active Cohort
               </span>
             </div>
           </a>

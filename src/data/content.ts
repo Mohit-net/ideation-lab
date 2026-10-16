@@ -300,48 +300,10 @@ export const PAST_EVENTS = [
       600,
     ),
     gallery: [
-      "/events/event2-photo1.png",
-      "/events/event2-photo2.png",
-      "/events/event2-photo3.png",
-      "/events/event2-photo4.png",
-    ],
-  },
-  {
-    title: "Eureka! Pitching Competition 2026",
-    date: "August 2026",
-    attendees: 40,
-    category: "Workshop",
-    description:
-      "Organized as a launchpad for student entrepreneurs, featuring 2-minute business pitches followed by a 3-minute jury Q&A to prepare participants for E-Cell IIT Bombay’s flagship Eureka! competition.",
-    image: IMAGE_MOCK(
-      "Students attending entrepreneurship workshop classroom lecture setting speaker on stage attentive audience",
-      800,
-      600,
-    ),
-    gallery: [
-      "/events/event1-photo1.png",
-      "/events/event1-photo2.png",
-      "/events/event1-photo3.png",
-      "/events/event1-photo4.png",
-    ],
-  },
-  {
-    title: "Eureka! Pitching Competition 2026",
-    date: "August 2026",
-    attendees: 40,
-    category: "Workshop",
-    description:
-      "Organized as a launchpad for student entrepreneurs, featuring 2-minute business pitches followed by a 3-minute jury Q&A to prepare participants for E-Cell IIT Bombay’s flagship Eureka! competition.",
-    image: IMAGE_MOCK(
-      "Students attending entrepreneurship workshop classroom lecture setting speaker on stage attentive audience",
-      800,
-      600,
-    ),
-    gallery: [
-      "/events/event1-photo1.png",
-      "/events/event1-photo2.png",
-      "/events/event1-photo3.png",
-      "/events/event1-photo4.png",
+      "/events/event2-photo1.jpeg",
+      "/events/event2-photo2.jpeg",
+      "/events/event2-photo3.jpeg",
+      "/events/event2-photo4.jpeg",
     ],
   },
 ];

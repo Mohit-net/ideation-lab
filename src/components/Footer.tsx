@@ -14,17 +14,21 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <a
               href="#home"
-              className="inline-flex items-center gap-2.5 mb-6 group"
+              className="inline-flex items-center gap-3 mb-6 group"
             >
-              <span className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-gradient-brand text-white shadow-glow-brand">
-                <img src="/src/assets/logo.png" alt="..." className="w-7 h-7" />
-              </span>
-              <div className="flex flex-col leading-tight text-left">
-                <span className="font-display font-bold text-[17px] text-white tracking-tight">
-                  The Ideation Lab
+              <div className="relative h-14 sm:h-20 w-auto transition-transform duration-300 group-hover:scale-105">
+                <img 
+                  src="/src/assets/logo.png" 
+                  alt="The Ideation Lab Logo" 
+                  className="h-full w-auto object-contain brightness-110"
+                />
+              </div>
+              <div className="flex flex-col justify-center leading-tight text-left border-l border-white/10 pl-4 h-12 sm:h-14 ml-1">
+                <span className="font-display font-bold text-[16px] text-white tracking-tight">
+                  NEC 2026
                 </span>
-                <span className="text-[10px] uppercase tracking-[0.16em] text-brand-300 font-semibold">
-                  NEC 2026 · E-Cell IIT Bombay
+                <span className="text-[10px] uppercase tracking-[0.2em] text-brand-300 font-bold">
+                  E-Cell IIT Bombay
                 </span>
               </div>
             </a>

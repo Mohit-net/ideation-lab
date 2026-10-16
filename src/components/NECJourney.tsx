@@ -156,8 +156,8 @@ export default function NECJourney() {
                   Every challenge is a new chapter, every mentor a new teacher, every idea a seed for what comes next. Follow our journey as we wrap up NEC 2026 and take everything we've built into the world.
                 </p>
                 <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
-                  <a href="#gallery" className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-gradient-brand text-white font-semibold shadow-glow-brand hover:shadow-[0_0_60px_-10px_rgba(139,92,246,0.7)] transition-all duration-300 hover:-translate-y-0.5">
-                    See Moments Gallery
+                  <a href="#blog" className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-gradient-brand text-white font-semibold shadow-glow-brand hover:shadow-[0_0_60px_-10px_rgba(139,92,246,0.7)] transition-all duration-300 hover:-translate-y-0.5">
+                    Read Our Blog
                     <ArrowRight className="w-5 h-5" />
                   </a>
                   <a href="#events" className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-white/10 text-white font-semibold border border-white/20 hover:bg-white/20 hover:text-white transition-all duration-300 hover:-translate-y-0.5">

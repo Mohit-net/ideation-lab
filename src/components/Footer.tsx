@@ -97,15 +97,6 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#gallery"
-                  className="inline-flex items-center gap-1.5 text-sm text-ink-400 hover:text-white transition-colors group"
-                >
-                  <ArrowUpRight className="w-3.5 h-3.5 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
-                  Photo Gallery
-                </a>
-              </li>
-              <li>
-                <a
                   href="#events"
                   className="inline-flex items-center gap-1.5 text-sm text-ink-400 hover:text-white transition-colors group"
                 >

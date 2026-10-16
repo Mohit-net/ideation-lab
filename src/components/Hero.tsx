@@ -1,8 +1,16 @@
-import { motion } from 'framer-motion';
-import { ArrowRight, Users, Rocket, CalendarDays, Award, Sparkles, GraduationCap, ChevronRight } from 'lucide-react';
-import type { LucideIcon } from 'lucide-react';
-import { HIGHLIGHT_STATS } from '../data/content';
-import { IMAGE_MOCK } from '../lib/utils';
+import { motion } from "framer-motion";
+import {
+  ArrowRight,
+  Users,
+  Rocket,
+  CalendarDays,
+  Award,
+  Sparkles,
+  GraduationCap,
+  ChevronRight,
+} from "lucide-react";
+import type { LucideIcon } from "lucide-react";
+import { HIGHLIGHT_STATS } from "../data/content";
 
 const iconMap: Record<string, LucideIcon> = {
   users: Users,
@@ -13,7 +21,10 @@ const iconMap: Record<string, LucideIcon> = {
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden section-padding pt-36 bg-ink-950">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center overflow-hidden section-padding pt-36 bg-ink-950"
+    >
       <div className="absolute inset-0 bg-mesh-gradient-dark opacity-80 pointer-events-none" />
       <div className="absolute inset-0 grid-bg opacity-[0.25] pointer-events-none" />
       <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[60rem] max-w-[160vw] h-[60rem] bg-brand-500/20 rounded-full blur-[160px] pointer-events-none" />
@@ -44,16 +55,37 @@ export default function Hero() {
             <motion.h1
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+              transition={{
+                duration: 0.8,
+                delay: 0.15,
+                ease: [0.22, 1, 0.36, 1],
+              }}
               className="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl xl:text-[4.25rem] leading-[1.02] tracking-[-0.03em] text-white text-balance mb-6"
             >
-              Where Ideas Meet{' '}
+              Where Ideas Meet{" "}
               <span className="relative inline-block">
                 <span className="gradient-text">Impact.</span>
-                <svg className="absolute -bottom-2 left-0 w-full h-3 pointer-events-none" viewBox="0 0 300 12" fill="none" preserveAspectRatio="none">
-                  <path d="M2 9C50 3 120 1 298 5" stroke="url(#underline)" strokeWidth="3" strokeLinecap="round" opacity="0.8" />
+                <svg
+                  className="absolute -bottom-2 left-0 w-full h-3 pointer-events-none"
+                  viewBox="0 0 300 12"
+                  fill="none"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M2 9C50 3 120 1 298 5"
+                    stroke="url(#underline)"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    opacity="0.8"
+                  />
                   <defs>
-                    <linearGradient id="underline" x1="0" y1="0" x2="300" y2="0">
+                    <linearGradient
+                      id="underline"
+                      x1="0"
+                      y1="0"
+                      x2="300"
+                      y2="0"
+                    >
                       <stop offset="0%" stopColor="#7c3aed" />
                       <stop offset="100%" stopColor="#f97316" />
                     </linearGradient>
@@ -61,7 +93,7 @@ export default function Hero() {
                 </svg>
               </span>
               <br />
-              <span className="text-white/80">Ideate. Innovate.</span>{' '}
+              <span className="text-white/80">Ideate. Innovate.</span>{" "}
               <span className="gradient-text-accent">Impact.</span>
             </motion.h1>
 
@@ -71,7 +103,13 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.3 }}
               className="text-base sm:text-lg lg:text-xl text-ink-400 leading-relaxed max-w-2xl mb-10"
             >
-              <span className="font-semibold text-white">The Ideation Lab</span> is a student-driven team focused on innovation, entrepreneurship, and turning ideas into impactful initiatives through the <span className="font-semibold text-brand-300">National Entrepreneurship Challenge (NEC)</span> by E-Cell, IIT Bombay.
+              <span className="font-semibold text-white">The Ideation Lab</span>{" "}
+              is a student-driven team focused on innovation, entrepreneurship,
+              and turning ideas into impactful initiatives through the{" "}
+              <span className="font-semibold text-brand-300">
+                National Entrepreneurship Challenge (NEC)
+              </span>{" "}
+              by E-Cell, IIT Bombay.
             </motion.p>
 
             <motion.div
@@ -80,11 +118,17 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.4 }}
               className="flex flex-wrap items-center gap-3 sm:gap-4 mb-12"
             >
-              <a href="#nec-journey" className="btn-primary group text-base !py-4 !px-7">
+              <a
+                href="#nec-journey"
+                className="btn-primary group text-base !py-4 !px-7"
+              >
                 Explore Our Journey
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </a>
-              <a href="#team" className="btn-secondary group text-base !py-4 !px-7">
+              <a
+                href="#team"
+                className="btn-secondary group text-base !py-4 !px-7"
+              >
                 <Users className="w-5 h-5 text-brand-300" />
                 Meet the Team
                 <ChevronRight className="w-5 h-5 opacity-60" />
@@ -112,7 +156,9 @@ export default function Hero() {
                         {stat.value}
                       </span>
                     </div>
-                    <p className="text-xs sm:text-sm text-ink-400 font-medium leading-tight">{stat.label}</p>
+                    <p className="text-xs sm:text-sm text-ink-400 font-medium leading-tight">
+                      {stat.label}
+                    </p>
                   </div>
                 );
               })}
@@ -122,7 +168,11 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
+            transition={{
+              duration: 0.8,
+              delay: 0.35,
+              ease: [0.22, 1, 0.36, 1],
+            }}
             className="lg:col-span-5 relative"
           >
             <div className="relative">
@@ -131,7 +181,7 @@ export default function Hero() {
 
               <div className="relative overflow-hidden rounded-[1.75rem] sm:rounded-[2rem] border border-white/10 shadow-[0_40px_80px_-32px_rgba(0,0,0,0.9)]">
                 <img
-                  src={IMAGE_MOCK('Team photo of six diverse young indian college students standing together smiling in modern college campus building warm lighting professional team photography wide group shot', 900, 1000)}
+                  src="/src/assets/photo.jpeg"
                   alt="The Ideation Lab — Team Photo"
                   className="w-full h-[460px] sm:h-[560px] lg:h-[600px] object-cover"
                   loading="eager"
@@ -147,7 +197,10 @@ export default function Hero() {
                   <div className="bg-ink-900/70 backdrop-blur-xl rounded-2xl p-4 sm:p-5 border border-white/10 shadow-soft-dark flex items-center gap-3 sm:gap-4">
                     <div className="relative shrink-0">
                       <span className="inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-brand text-white shadow-glow-brand-strong">
-                        <GraduationCap className="w-6 h-6 sm:w-7 sm:h-7" strokeWidth={2} />
+                        <GraduationCap
+                          className="w-6 h-6 sm:w-7 sm:h-7"
+                          strokeWidth={2}
+                        />
                       </span>
                       <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-accent-500 border-2 border-ink-900" />
                     </div>
@@ -161,8 +214,12 @@ export default function Hero() {
                     </div>
                     <div className="hidden sm:block shrink-0 h-10 w-px bg-white/10" />
                     <div className="hidden sm:block text-right shrink-0">
-                      <p className="font-display font-extrabold text-2xl gradient-text leading-none">NEC</p>
-                      <p className="text-xs text-ink-400 font-semibold mt-1">2026</p>
+                      <p className="font-display font-extrabold text-2xl gradient-text leading-none">
+                        NEC
+                      </p>
+                      <p className="text-xs text-ink-400 font-semibold mt-1">
+                        2026
+                      </p>
                     </div>
                   </div>
                 </motion.div>
@@ -179,8 +236,12 @@ export default function Hero() {
                     <Rocket className="w-5 h-5" strokeWidth={2.2} />
                   </span>
                   <div>
-                    <p className="text-xs text-ink-400 font-semibold uppercase tracking-wide">Projects Shipped</p>
-                    <p className="font-display font-extrabold text-xl text-white leading-none">12+</p>
+                    <p className="text-xs text-ink-400 font-semibold uppercase tracking-wide">
+                      Projects Shipped
+                    </p>
+                    <p className="font-display font-extrabold text-xl text-white leading-none">
+                      12+
+                    </p>
                   </div>
                 </div>
               </motion.div>
@@ -196,8 +257,12 @@ export default function Hero() {
                     <Award className="w-5 h-5" strokeWidth={2.2} />
                   </span>
                   <div>
-                    <p className="text-xs text-ink-400 font-semibold uppercase tracking-wide">Milestones Hit</p>
-                    <p className="font-display font-extrabold text-xl text-white leading-none">15+</p>
+                    <p className="text-xs text-ink-400 font-semibold uppercase tracking-wide">
+                      Milestones Hit
+                    </p>
+                    <p className="font-display font-extrabold text-xl text-white leading-none">
+                      15+
+                    </p>
                   </div>
                 </div>
               </motion.div>
@@ -207,7 +272,9 @@ export default function Hero() {
       </div>
 
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden sm:flex flex-col items-center gap-2 text-ink-500 animate-float-slow">
-        <span className="text-[10px] uppercase tracking-[0.25em] font-semibold">Scroll</span>
+        <span className="text-[10px] uppercase tracking-[0.25em] font-semibold">
+          Scroll
+        </span>
         <div className="w-5 h-8 rounded-full border-2 border-ink-600 flex items-start justify-center p-1">
           <span className="w-1 h-2 rounded-full bg-brand-400 animate-[float_1.8s_ease-in-out_infinite]" />
         </div>

@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { NAV_LINKS } from "../data/content";
 import { cn } from "../lib/utils";
+import logo from "../assets/logo.png";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -40,9 +41,9 @@ export default function Navbar() {
           >
             <div className="relative h-12 sm:h-16 w-auto transition-transform duration-300 group-hover:scale-105">
               <img
-                src="/src/assets/logo.png"
+                src={logo}
                 alt="The Ideation Lab Logo"
-                className="h-full w-auto object-contain brightness-110"
+                className="h-full w-auto object-contain"
               />
             </div>
             <div className="hidden sm:flex flex-col justify-center leading-tight text-left border-l border-white/10 pl-4 h-10 sm:h-12">

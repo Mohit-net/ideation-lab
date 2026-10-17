@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { HIGHLIGHT_STATS } from "../data/content";
+import teamPhoto from "../assets/photo.jpg";
 
 const iconMap: Record<string, LucideIcon> = {
   users: Users,
@@ -181,7 +182,7 @@ export default function Hero() {
 
               <div className="relative overflow-hidden rounded-[1.75rem] sm:rounded-[2rem] border border-white/10 shadow-[0_40px_80px_-32px_rgba(0,0,0,0.9)]">
                 <img
-                  src="/src/assets/photo.jpg"
+                  src={teamPhoto}
                   alt="The Ideation Lab — Team Photo"
                   className="w-full h-[460px] sm:h-[560px] lg:h-[600px] object-cover"
                   loading="eager"

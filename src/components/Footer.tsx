@@ -1,9 +1,11 @@
 import { Mail, ArrowUpRight, MapPin } from "lucide-react";
 import { InstagramIcon, LinkedinIcon } from "./SocialIcons";
 import { NAV_LINKS, SOCIAL_LINKS } from "../data/content";
+import logo from "../assets/logo.png";
 
 export default function Footer() {
   const year = new Date().getFullYear();
+
   return (
     <footer className="relative bg-ink-950 text-ink-300 overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-[0.06] pointer-events-none" />
@@ -18,11 +20,12 @@ export default function Footer() {
             >
               <div className="relative h-14 sm:h-20 w-auto transition-transform duration-300 group-hover:scale-105">
                 <img
-                  src="/src/assets/logo.png"
+                  src={logo}
                   alt="The Ideation Lab Logo"
                   className="h-full w-auto object-contain brightness-110"
                 />
               </div>
+
               <div className="flex flex-col justify-center leading-tight text-left border-l border-white/10 pl-4 h-12 sm:h-14 ml-1">
                 <span className="font-display font-bold text-[16px] text-white tracking-tight">
                   The Ideation Lab
@@ -32,11 +35,13 @@ export default function Footer() {
                 </span>
               </div>
             </a>
+
             <p className="text-ink-400 leading-relaxed max-w-md mb-7">
               A student-driven team on a mission to turn ambitious ideas into
               real-world, impactful ventures. We compete, collaborate, learn,
               and build — one idea at a time.
             </p>
+
             <div className="flex items-center gap-3">
               <a
                 href={SOCIAL_LINKS.instagram}
@@ -47,6 +52,7 @@ export default function Footer() {
               >
                 <InstagramIcon className="w-5 h-5 text-ink-300 group-hover:text-white transition-colors" />
               </a>
+
               <a
                 href={SOCIAL_LINKS.linkedin}
                 target="_blank"
@@ -56,6 +62,7 @@ export default function Footer() {
               >
                 <LinkedinIcon className="w-5 h-5 text-ink-300 group-hover:text-white transition-colors" />
               </a>
+
               <a
                 href={`mailto:${SOCIAL_LINKS.email}`}
                 aria-label="Email"
@@ -70,6 +77,7 @@ export default function Footer() {
             <h4 className="font-display font-semibold text-white mb-5 text-sm uppercase tracking-wider">
               Navigate
             </h4>
+
             <ul className="space-y-3">
               {NAV_LINKS.map((l) => (
                 <li key={l.href}>
@@ -89,6 +97,7 @@ export default function Footer() {
             <h4 className="font-display font-semibold text-white mb-5 text-sm uppercase tracking-wider">
               Quick Links
             </h4>
+
             <ul className="space-y-3">
               <li>
                 <a
@@ -99,6 +108,7 @@ export default function Footer() {
                   NEC Timeline
                 </a>
               </li>
+
               <li>
                 <a
                   href="#events"
@@ -108,6 +118,7 @@ export default function Footer() {
                   Past Activities
                 </a>
               </li>
+
               <li>
                 <a
                   href="#team"
@@ -124,6 +135,7 @@ export default function Footer() {
             <h4 className="font-display font-semibold text-white mb-5 text-sm uppercase tracking-wider">
               Contact
             </h4>
+
             <ul className="space-y-4">
               <li>
                 <a
@@ -133,17 +145,17 @@ export default function Footer() {
                   <span className="mt-0.5 inline-flex items-center justify-center w-8 h-8 rounded-lg bg-white/5 border border-white/10">
                     <Mail className="w-4 h-4 text-brand-300" />
                   </span>
+
                   <span className="break-all">{SOCIAL_LINKS.email}</span>
                 </a>
               </li>
+
               <li className="flex items-start gap-3 text-sm text-ink-400">
                 <span className="mt-0.5 inline-flex items-center justify-center w-8 h-8 rounded-lg bg-white/5 border border-white/10">
                   <MapPin className="w-4 h-4 text-accent-400" />
                 </span>
-                <span>
-                  MCT Rajiv Gandhi Institute of Technology, MUMBAI
-                  <br />
-                </span>
+
+                <span>MCT Rajiv Gandhi Institute of Technology, MUMBAI</span>
               </li>
             </ul>
           </div>
@@ -155,6 +167,7 @@ export default function Footer() {
             <span className="text-accent-400">curiosity</span> and{" "}
             <span className="text-brand-400">ambition</span>.
           </p>
+
           <div className="flex items-center gap-5 text-xs text-ink-500">
             <span className="inline-flex items-center gap-2">
               <span className="relative flex h-2 w-2">

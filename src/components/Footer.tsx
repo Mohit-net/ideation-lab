@@ -17,18 +17,18 @@ export default function Footer() {
               className="inline-flex items-center gap-3 mb-6 group"
             >
               <div className="relative h-14 sm:h-20 w-auto transition-transform duration-300 group-hover:scale-105">
-                <img 
-                  src="/src/assets/logo.png" 
-                  alt="The Ideation Lab Logo" 
+                <img
+                  src="/src/assets/logo.png"
+                  alt="The Ideation Lab Logo"
                   className="h-full w-auto object-contain brightness-110"
                 />
               </div>
               <div className="flex flex-col justify-center leading-tight text-left border-l border-white/10 pl-4 h-12 sm:h-14 ml-1">
                 <span className="font-display font-bold text-[16px] text-white tracking-tight">
-                  NEC 2026
+                  The Ideation Lab
                 </span>
                 <span className="text-[10px] uppercase tracking-[0.2em] text-brand-300 font-bold">
-                  E-Cell IIT Bombay
+                  MCT's RGIT, Mumbai
                 </span>
               </div>
             </a>
@@ -141,9 +141,8 @@ export default function Footer() {
                   <MapPin className="w-4 h-4 text-accent-400" />
                 </span>
                 <span>
-                  NEC 2026
+                  MCT Rajiv Gandhi Institute of Technology, MUMBAI
                   <br />
-                  E-Cell, IIT Bombay
                 </span>
               </li>
             </ul>
@@ -162,7 +161,7 @@ export default function Footer() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
-              NEC 2026 — Active Cohort
+              NEC 2026
             </span>
           </div>
         </div>

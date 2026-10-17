@@ -39,18 +39,18 @@ export default function Navbar() {
             onClick={() => setOpen(false)}
           >
             <div className="relative h-12 sm:h-16 w-auto transition-transform duration-300 group-hover:scale-105">
-              <img 
-                src="/src/assets/logo.png" 
-                alt="The Ideation Lab Logo" 
+              <img
+                src="/src/assets/logo.png"
+                alt="The Ideation Lab Logo"
                 className="h-full w-auto object-contain brightness-110"
               />
             </div>
             <div className="hidden sm:flex flex-col justify-center leading-tight text-left border-l border-white/10 pl-4 h-10 sm:h-12">
               <span className="font-display font-bold text-[14px] text-white tracking-tight">
-                NEC 2026
+                The Ideation Lab
               </span>
               <span className="text-[9px] uppercase tracking-[0.2em] text-brand-400 font-bold">
-                Active Cohort
+                MCT's RGIT, Mumbai
               </span>
             </div>
           </a>

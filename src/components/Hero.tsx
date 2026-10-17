@@ -181,7 +181,7 @@ export default function Hero() {
 
               <div className="relative overflow-hidden rounded-[1.75rem] sm:rounded-[2rem] border border-white/10 shadow-[0_40px_80px_-32px_rgba(0,0,0,0.9)]">
                 <img
-                  src="/src/assets/photo.jpeg"
+                  src="/src/assets/photo.jpg"
                   alt="The Ideation Lab — Team Photo"
                   className="w-full h-[460px] sm:h-[560px] lg:h-[600px] object-cover"
                   loading="eager"
@@ -230,21 +230,7 @@ export default function Hero() {
                 animate={{ opacity: 1, x: 0, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.9 }}
                 className="absolute -top-3 -left-3 sm:-top-5 sm:-left-6 animate-float"
-              >
-                <div className="bg-ink-900/80 backdrop-blur-xl rounded-2xl px-4 py-3 shadow-card-dark border border-white/10 flex items-center gap-3">
-                  <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-accent text-white shadow-glow-accent">
-                    <Rocket className="w-5 h-5" strokeWidth={2.2} />
-                  </span>
-                  <div>
-                    <p className="text-xs text-ink-400 font-semibold uppercase tracking-wide">
-                      Projects Shipped
-                    </p>
-                    <p className="font-display font-extrabold text-xl text-white leading-none">
-                      12+
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
+              ></motion.div>
 
               <motion.div
                 initial={{ opacity: 0, x: -20, y: 10 }}
